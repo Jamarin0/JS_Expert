@@ -25,7 +25,7 @@ class File {
     static isValid(csvString, options = DEFAULT_OPTIONS) {
         const lines = csvString.split('\n')
         const firstLine = lines.shift() 
-        const header = firstLine.split(',' )
+        const header = firstLine.split(',')
         const isHeaderValid = header === options.fields.join(',')
 
         if(!isHeaderValid){
