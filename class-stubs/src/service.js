@@ -8,6 +8,15 @@ class Service{
             })
         })
     }
+    async getPlanets(url) {
+        const result = await this.makeRequest(url)
+
+        return{
+            name: result.name,
+            surface_water: result.surface_water,
+            apperedIn: result.films.length,
+        }
+    }
 }
 
 
