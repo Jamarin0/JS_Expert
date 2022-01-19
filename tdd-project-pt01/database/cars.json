@@ -1,1 +1,23 @@
-[{"id":"60a1af41-7b41-4fd0-8c6c-bef530315677","name":"Expedition","releaseYear":2021,"available":true,"gasAvailable":true},{"id":"2b834d6a-46b0-474a-b5f7-a66f8a556975","name":"Mustang","releaseYear":2021,"available":true,"gasAvailable":true},{"id":"81cc634b-9d7a-40e9-adef-7e919c6eaaf6","name":"Taurus","releaseYear":2021,"available":true,"gasAvailable":true}]
+[
+  {
+    "id": "3e916e2d-bb6a-47f4-b52c-f127debadc4f",
+    "name": "Taurus",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "af9acbcf-8120-44f3-ae7a-55aac98e2bd3",
+    "name": "Model T",
+    "releaseYear": 2021,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "c102c07c-c28c-492b-8de7-5730541b2573",
+    "name": "Golf",
+    "releaseYear": 2021,
+    "available": true,
+    "gasAvailable": true
+  }
+]
