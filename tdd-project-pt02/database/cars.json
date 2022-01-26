@@ -1,0 +1,23 @@
+[
+  {
+    "id": "75dd22f6-68ad-4f02-9abb-725255e3c330",
+    "name": "LeBaron",
+    "releaseYear": 2021,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "7fff4b92-3070-4364-a055-68f25fb76ff1",
+    "name": "Accord",
+    "releaseYear": 2021,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "d4be02cd-fbdf-47e5-9348-7113d0ff4ecb",
+    "name": "Alpine",
+    "releaseYear": 2021,
+    "available": true,
+    "gasAvailable": true
+  }
+]
