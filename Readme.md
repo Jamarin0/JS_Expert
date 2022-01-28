@@ -1,4 +1,4 @@
-<h1>Repositório criado para desenvolvimento de testes e novas skills.<span>&#x1f1e7;&#x1f1f7;</span></h1>
+<h1>Repositório criado para desenvolvimento de testes e novas skills.</h1>
 
 ### Os 4 primeiros projetos contém testes específicos como:
 
