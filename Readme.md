@@ -5,16 +5,19 @@
 1 - class mock;\
 2 - class spies;\
 3 - class stubs;\
-4 - coverage e2e;\
+4 - coverage e2e;
 
 # Contendo neles:
 
 - class-mock: Onde foi realizado o mock para testes de arquivos .csv;
 <br>
+
 - class-stubs: Onde foi utiliado o Sinon para realização de testes com o acesso a dados externos, chamando a api swapi, guardando o retorno da requisição em um json e testando as funções sem precisar repetir request externas a cada teste;
 <br>
+
 - class-spies: para observar as funções, validando a quantidade de vezes que foram chamadas, testando os parametros e os resultados utilizando o algoritmo de um fibonacci;
 <br>
+
 - coverage-e2e: Utilizando libs mocha e nyc para o teste de integração, onde foi realizado a cobertura de código;
 
 ### Por fim, podemos ir para os mais completos - TDD
