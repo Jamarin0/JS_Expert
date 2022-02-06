@@ -29,4 +29,4 @@ Nele foi utilizado o padrão de desenvolvimento TDD e todos os testes unitários
 
 Tipo de valor vs Tipo de referência(Immutability vs Mutability);\
 Coerção de tipos & Objects lifecycle: toString, valueOf e Symbol.toPrimitive;\
-Prototype Chain - Herança em js;\
+Prototype Chain - Herança em js;
