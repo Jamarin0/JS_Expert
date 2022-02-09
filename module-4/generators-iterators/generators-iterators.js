@@ -5,7 +5,8 @@ function* calculation(arg1, arg2) {
 }
 
 function *main() {
-    yield 'Hello'
+    yield 'HI'
+
 }
 
 const genereator = main()
