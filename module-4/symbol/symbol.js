@@ -53,6 +53,33 @@ class MyDate{
     constructor(...args) {
         this[kItems] = args.map(arg => new Date(...arg))
     }
+    [Symbol.toPrimitive](coercionType) {
+        if(coercionType !== "string") throw new TypeError()
+
+        const itens = this[kItems]
+                         .map(item =>
+                                 new Intl
+                                    .DateTimeFormat("pt-BR", { month: 'long', day: '2-digit', year: 'numeric'})
+                                    .format(item)
+            )
+            return new Intl.ListFormat("pt-BR", { style: "long", type: "conjuction"}).format(itens)
+    }
+    *[Symbol.iterator]() {
+        for (const item of this[kItems]) {
+            yield item
+        }
+    }
+
+    async *[Symbol.asyncIterator]() {
+            const timeout = ms => new Promise(r => setTimeout(r,ms))
+            for( const item of this[kItems]) {
+                await timeout(100)
+                yield item.toISOString()
+            }
+    }
+    get [Symbol.toStringTag]() {
+        return 'What?'
+    }
 }
 
 const myDate = new MyDate(
@@ -61,5 +88,12 @@ const myDate = new MyDate(
 )
 
 const expectedDates = [
-    new Date()
+    new Date(2020, 03, 01),
+    new Date(2018, 02, 02),
 ]
+
+assert.deepStrictEqual(Object.prototype.toString.call(myDate), '[object What?]')
+assert.throws(() => myDate + 1, TypeError)
+assert.deepStrictEqual(String(myDate), '01 de abril de 2020 e 02 de março de 2018')
+
+assert.deepStrictEqual([...myDate], expectedDates)
