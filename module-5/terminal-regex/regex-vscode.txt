@@ -1,0 +1,25 @@
+regex101.com
+^\d{3}.\d{3}.\d{3}-\d{2}$
+
+123.123.123-15
+235.123.123-25
+123.569.123-30
+
+
+replace [.-] - vazio 
+
+Jamarino, Guilherme
+Begins, Batman
+Man, Super
+
+
+(\w+),\s(\w+)$  
+{firstName: "$2", lastName: "$1"}
+
+
+\[(.*?)\]\(([http|https].*?)\)
+<a href="$2">$1</a>
+
+Jamarino, [Guilherme](https://google.com) Jamarino, [Jamarino](https://Jamarino.com) Jamarino, [twiter](https://twiter.com)
+Begins, Batman
+Man, Super
